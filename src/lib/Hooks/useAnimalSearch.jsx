@@ -18,7 +18,7 @@ function useAnimalSearch() {
     // const data = await response.json();
     // setAnimals(data);
     const data = animalsData.filter((animal) =>
-      animal.type.toLowerCase().includes(q),
+      animal.type.toLowerCase().includes(q.toLowerCase()),
     );
     setAnimals(data);
 
