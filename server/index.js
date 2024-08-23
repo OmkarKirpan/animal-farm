@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+// import Bun from "bun";
 // initialize the express app
 const app = express();
 app.use(cors());
@@ -19,6 +20,8 @@ const animals = [...Array(250).keys()].map((id) => {
     name: chance.name(),
   };
 });
+
+// Bun.write("./animals.json", JSON.stringify(animals));
 
 // Endpoint to search for animals
 app.get("", (req, res) => {

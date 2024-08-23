@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
+import animalsData from "../animals.json";
 
 function useAnimalSearch() {
-  const [animals, setAnimals] = useState([]);
+  const [animals, setAnimals] = useState(animalsData);
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -11,10 +12,14 @@ function useAnimalSearch() {
   }, []);
 
   const search = async (q) => {
-    const response = await fetch(
-      "http://localhost:8080/?" + new URLSearchParams({ q }),
+    // const response = await fetch(
+    //   "http://localhost:8080/?" + new URLSearchParams({ q }),
+    // );
+    // const data = await response.json();
+    // setAnimals(data);
+    const data = animalsData.filter((animal) =>
+      animal.type.toLowerCase().includes(q),
     );
-    const data = await response.json();
     setAnimals(data);
 
     localStorage.setItem("lastQuery", q);
