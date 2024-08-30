@@ -39,8 +39,8 @@ Animal Farm is a full-stack application that emphasizes the importance of client
 - 📝 **Importance of Documentation**: Comprehensive documentation and access to source code facilitate learning and serve as valuable resources for future projects.
 
 ## Demo
-![demo](https://github.com/user-attachments/assets/2c98e69e-d15d-438f-9122-2bdb84e2c363) 
-
+[![demo](https://github.com/user-attachments/assets/2c98e69e-d15d-438f-9122-2bdb84e2c363)](https://omkarkirpan.github.io/animal-farm/)
+You can visit the project at: [omkarkirpan.github.io/animal-farm/](omkarkirpan.github.io/animal-farm/)
 
 ## Getting Started
 
